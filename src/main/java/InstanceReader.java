@@ -32,6 +32,7 @@ public class InstanceReader {
                 int y = 0;
                 int q = 0;
 
+
                 switch (i){
                     case 0:
                         String[] col1 = line.split(split);
@@ -46,7 +47,7 @@ public class InstanceReader {
                         String[] colDeposit = line.split(split);
                         x = Integer.parseInt(colDeposit[1]);
                         y = Integer.parseInt(colDeposit[2]);
-                        dNode = new Node(x, y);
+                        dNode = new Node(x, y, i-1);
                         System.out.println(dNode.getX() + " " + dNode.getY());
                         break;
 
@@ -55,7 +56,7 @@ public class InstanceReader {
                         x = Integer.parseInt(colCustomer[1]);
                         y = Integer.parseInt(colCustomer[2]);
                         q = Integer.parseInt(colCustomer[3]);
-                        nodesList.add(new Node(x, y, q));
+                        nodesList.add(new Node(x, y, q, i-1));
 
                 }
                 i++;
