@@ -19,7 +19,7 @@ public class InstanceReader {
         ArrayList<Node> nodesList = new ArrayList<>();
         int nCustomers = 0;
         int capacity = 0;
-        Node dNode = null;
+        DepositNode dNode = null;
         int rTime = 0;
         int dTime = 0;
 
@@ -47,7 +47,7 @@ public class InstanceReader {
                         String[] colDeposit = line.split(split);
                         x = Integer.parseInt(colDeposit[1]);
                         y = Integer.parseInt(colDeposit[2]);
-                        dNode = new Node(x, y, i-1);
+                        dNode = new DepositNode(x, y, i-1);
                         System.out.println(dNode.getX() + " " + dNode.getY());
                         break;
 

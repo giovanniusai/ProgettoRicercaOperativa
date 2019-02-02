@@ -7,11 +7,11 @@ public class Instance {
     private int nCustomers = 0;
     private int rTime =0;
     private int dTime =0;
-    private Node dNode;
+    private DepositNode dNode;
     private ArrayList<Node> nodesList;
     private String instanceName;
 
-    public Instance(int nCustomers, int capacity, int rTime, int dTime, Node dNode, ArrayList<Node> nodesList){
+    public Instance(int nCustomers, int capacity, int rTime, int dTime, DepositNode dNode, ArrayList<Node> nodesList){
         setCapacity(capacity);
         setnCustomers(nCustomers);
         setdNode(dNode);
@@ -27,11 +27,11 @@ public class Instance {
         this.nCustomers = nCustomers;
     }
 
-    private void setdNode(Node dNode){
+    private void setdNode(DepositNode dNode){
         this.dNode = dNode;
     }
 
-    public Node getdNode() {
+    public DepositNode getdNode() {
         return dNode;
     }
 

@@ -6,7 +6,7 @@ public class DistanceMatrix {
     private double matrix[][];
     private List<Node> nodes;
 
-    public DistanceMatrix(List<Node> nodes, Node dNode){
+    public DistanceMatrix(List<Node> nodes, DepositNode dNode){
         this.nodes = nodes;
         this.nodes.add(dNode);
         this.matrix = new double[nodes.size()+1][nodes.size()+1];
