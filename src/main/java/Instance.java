@@ -12,16 +12,20 @@ public class Instance {
     private String instanceName;
 
     public Instance(int nCustomers, int capacity, int rTime, int dTime, DepositNode dNode, ArrayList<Node> nodesList){
+
         setCapacity(capacity);
         setnCustomers(nCustomers);
         setdNode(dNode);
         setInstanceName(instanceName);
+        setNodesList(nodesList);
 
     }
 
     private void setCapacity(int capacity){
         this.capacity = capacity;
     }
+
+    public int getCapacity(){ return capacity; }
 
     private void setnCustomers(int nCustomers){
         this.nCustomers = nCustomers;
@@ -50,6 +54,7 @@ public class Instance {
     public ArrayList<Node> getNodesList() {
         return nodesList;
     }
+
 
     private void setrTime(int rTime){
         this.rTime = rTime;

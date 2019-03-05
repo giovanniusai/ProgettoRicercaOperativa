@@ -31,7 +31,7 @@ public class SavingsMatrix {
                 Node second = nodes.get(j);
 
                 //non metto coppie riflessive ne simmetriche
-                if (!first.equals(second) && !getSavings().containsKey(new Pair<>(nodes.get(j), nodes.get(i)))) {
+                if (!first.equals(second) && !getSavings().containsKey(new Pair<>(nodes.get(j), nodes.get(i))) && first.getId() != 0 && second.getId() != 0) {
                     double sav = getDistances().getDistance(first, dNode) + getDistances().getDistance(dNode, second) - getDistances().getDistance(first, second);
                     getSavings().put(new Pair<>(nodes.get(i), nodes.get(j)), sav);
                 }

@@ -18,12 +18,13 @@ public class DistanceMatrix {
         for (int i = 0; i < nodes.size(); i++){
             for (int j = 0; j < nodes.size(); j++){
                 matrix[nodes.get(i).getId()][nodes.get(j).getId()] = calculateDistance(nodes.get(i), nodes.get(j));
+                //System.out.println(nodes.get(i).getId() + " " + nodes.get(j).getId() + " " + calculateDistance(nodes.get(i), nodes.get(j)));
             }
         }
     }
 
     public static double calculateDistance(Node a, Node b){
-        return Math.sqrt(Math.pow(a.getX()-b.getX(),2)) + Math.pow(a.getY()- b.getY(),2);
+        return Math.sqrt(Math.pow(a.getX()-b.getX(),2) + Math.pow(a.getY()- b.getY(),2));
     }
 
     public double getDistance(Node a, Node b){

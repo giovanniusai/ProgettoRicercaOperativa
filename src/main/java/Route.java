@@ -17,6 +17,7 @@ public class Route {
         double distance = dMatrix.getDistance(dNode, node);
         this.totalQuantity = node.getQ();
 
+
         route.add(dNode);
         route.add(node);
         route.add(dNode);
@@ -73,9 +74,6 @@ public class Route {
     public int getTotalQuantity(){
         return totalQuantity;
     }
-
-
-
 
 
     }
