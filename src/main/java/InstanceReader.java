@@ -40,7 +40,6 @@ public class InstanceReader {
                         capacity = Integer.parseInt(col1[2]);
                         rTime = Integer.parseInt(col1[3]);
                         dTime = Integer.parseInt(col1[4]);
-                        //System.out.println(nCustomers + " " + capacity + " " + rTime + " " + dTime );
                         break;
 
                     case 1:
@@ -48,7 +47,6 @@ public class InstanceReader {
                         x = Integer.parseInt(colDeposit[1]);
                         y = Integer.parseInt(colDeposit[2]);
                         dNode = new DepositNode(x, y, i-1);
-                        //System.out.println(dNode.getX() + " " + dNode.getY());
                         break;
 
                     default:
@@ -57,20 +55,12 @@ public class InstanceReader {
                         y = Integer.parseInt(colCustomer[2]);
                         q = Integer.parseInt(colCustomer[3]);
                         nodesList.add(new Node(x, y, q, i-1));
-                        //System.out.println(x + " " + y + " " + q);
-
 
 
                 }
                 i++;
 
             }
-
-//            for (Node n : nodesList) {
-//                    System.out.println(n.getX() + " " + n.getY() + " " + n.getQ());
-//                }
-
-
 
         }
         catch (FileNotFoundException e){

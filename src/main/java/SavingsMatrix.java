@@ -4,7 +4,6 @@ import javafx.util.Pair;
 
 import java.util.*;
 import java.util.stream.Collectors;
-import com.google.common.collect.Lists;
 
 public class SavingsMatrix {
 
@@ -40,28 +39,15 @@ public class SavingsMatrix {
     }
 
     private void computeSavings() {
-        //ottendo la lista dei savings ordinata
+        //ottengo la lista dei savings ordinata
         sortedSavings = getSavings().entrySet()
                 .stream()
                 .sorted(Map.Entry.comparingByValue(Collections.reverseOrder()))
                 .map(pair -> pair.getKey())
                 .collect(Collectors.toList());
-
-//        //divido la lista in partizioni di lunghezza dipendente dal parametro SHUFFLE_OFFSET
-//        List<List<Pair<Node, Node>>> partitions = Lists.partition(sortedSavings, (int) (sortedSavings.size() * 0.01));
-//
-//        //mischio in modo casuale le partizioni
-//        partitions.forEach(partition -> Collections.shuffle(partition));
-//
-//        //unisco le partizioni in un'unica lista
-//        shuffledSavings = partitions.stream().flatMap(List::stream)
-//                .collect(Collectors.toList());
     }
 
-    /**
-     * Metodo che restituisce i savings "circa" ordinati
-     * il disordine dipende dal parametro SHUFFLE_OFFSET
-     */
+
     public List<Pair<Node, Node>> getSortedSavings() {
         return sortedSavings;
     }

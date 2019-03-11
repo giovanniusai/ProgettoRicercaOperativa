@@ -13,15 +13,17 @@ public abstract class ClarkeWright {
     private double time;
 
     public ClarkeWright(Instance instance){
+        long currrentTime = System.currentTimeMillis();
         this.setInstance(instance);
         distances = new DistanceMatrix(getInstance().getNodesList(), getInstance().getdNode());
-
 
         savings = new SavingsMatrix(getInstance().getNodesList(), getInstance().getdNode(), distances);
 
         routes = new ArrayList<>();
 
+
         solveCW();
+        setTime(System.currentTimeMillis()- currrentTime);
 
 
     }
@@ -67,7 +69,6 @@ public abstract class ClarkeWright {
     protected void mergeRight(Pair<Node, Node> pair, List<Route> routes) {
         Node iNode = pair.getKey();
         Node jNode = pair.getValue();
-        routes.forEach(route -> route.getRoute().forEach(node -> System.out.println(node.getId())));
 
         //cerca una rotta il cui secondo elemento sia j
         Route first = null;
@@ -96,19 +97,27 @@ public abstract class ClarkeWright {
 
                 try {
                     first.merge(second);
-                    //routes.get(secondIdx).getRoute().forEach(node -> System.out.println(node.getId()));
-                    //System.out.println("\n");
                     routes.remove(secondIdx);
-                } catch (CapacityExceeded e) {
-                }
+                } catch (CapacityExceeded e) {}
             }
         }
     }
+
+
+
 
     protected abstract void solveCW();
 
     public void setInstance(Instance instance) {
         this.instance = instance;
+    }
+
+    public void setTime(double time){
+        this.time = time;
+    }
+
+    public double getTime(){
+        return time;
     }
 
     public Instance getInstance(){
@@ -117,5 +126,9 @@ public abstract class ClarkeWright {
 
     public List<Route> getRoutes(){
         return routes;
+    }
+
+    public Double getTotalCost(){
+        return routes.stream().map(route -> route.getTotalDistance()).reduce(Double::sum).get();
     }
 }

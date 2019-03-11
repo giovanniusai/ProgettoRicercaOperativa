@@ -18,7 +18,6 @@ public class DistanceMatrix {
         for (int i = 0; i < nodes.size(); i++){
             for (int j = 0; j < nodes.size(); j++){
                 matrix[nodes.get(i).getId()][nodes.get(j).getId()] = calculateDistance(nodes.get(i), nodes.get(j));
-                //System.out.println(nodes.get(i).getId() + " " + nodes.get(j).getId() + " " + calculateDistance(nodes.get(i), nodes.get(j)));
             }
         }
     }

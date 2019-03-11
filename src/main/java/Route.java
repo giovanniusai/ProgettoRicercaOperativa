@@ -28,12 +28,12 @@ public class Route {
 
     public void merge(Route r) {
 
-        //check if the merge is allowed
+        //controlla se è possibile unire le rotte
         if (this.totalQuantity + r.totalQuantity > capacity)
             throw new CapacityExceeded();
 
 
-        //togli i warehouse dalle rotte
+        //togli i nodi deposito dalle rotte
         Node last = this.route.remove(this.route.size() - 1);
         if (!(last instanceof DepositNode))
             throw new RuntimeException("Rotta che non finisce in deposito!");
