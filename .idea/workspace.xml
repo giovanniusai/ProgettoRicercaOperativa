@@ -3,14 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="2bd517de-ff2f-4c76-8a5c-4e83fdc9c40c" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ClarkeWright.java" afterPath="$PROJECT_DIR$/src/main/java/ClarkeWright.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/DistanceMatrix.java" afterPath="$PROJECT_DIR$/src/main/java/DistanceMatrix.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/InstanceReader.java" afterPath="$PROJECT_DIR$/src/main/java/InstanceReader.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" afterPath="$PROJECT_DIR$/src/main/java/Main.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ParallelClarkeWright.java" afterPath="$PROJECT_DIR$/src/main/java/ParallelClarkeWright.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Route.java" afterPath="$PROJECT_DIR$/src/main/java/Route.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/SavingsMatrix.java" afterPath="$PROJECT_DIR$/src/main/java/SavingsMatrix.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/SequentialClarkeWright.java" afterPath="$PROJECT_DIR$/src/main/java/SequentialClarkeWright.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -55,8 +47,8 @@
       <file leaf-file-name="SequentialClarkeWright.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/SequentialClarkeWright.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="651">
-              <caret line="33" column="0" lean-forward="false" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+            <state relative-caret-position="462">
+              <caret line="24" column="31" lean-forward="true" selection-start-line="24" selection-start-column="31" selection-end-line="24" selection-end-column="31" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -404,7 +396,7 @@
       <workItem from="1552127869310" duration="8666000" />
       <workItem from="1552232782018" duration="1805000" />
       <workItem from="1552315325492" duration="8674000" />
-      <workItem from="1552325450196" duration="13000" />
+      <workItem from="1552325450196" duration="34000" />
     </task>
     <task id="LOCAL-00001" summary="Prova">
       <created>1548777890262</created>
@@ -476,11 +468,18 @@
       <option name="project" value="LOCAL" />
       <updated>1551806461333</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Work in progress">
+      <created>1552325468156</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1552325468156</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="115008000" />
+    <option name="totallyTimeSpent" value="115029000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="2391" y="-9" width="2418" height="1318" extended-state="6" />
@@ -871,8 +870,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/SequentialClarkeWright.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="651">
-          <caret line="33" column="0" lean-forward="false" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+        <state relative-caret-position="462">
+          <caret line="24" column="31" lean-forward="true" selection-start-line="24" selection-start-column="31" selection-end-line="24" selection-end-column="31" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
